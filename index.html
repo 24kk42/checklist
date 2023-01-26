@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .content {
+            max-width: 800px;
+            padding: 30px;
+            left: 100px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        p,
+        img {
+            margin-bottom: 20px;
+            color: #2d3958;
+        }
+        
+        .cover-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 
+        <checklist></checklist>
+
+        This is the structure of the HTML tag. 
+
+        The <checklist></checklist> will be replaced with the real checklist on the DOM.
+
+        * If the <checklist> element has no attributes (as above), it will create an empty checklist and the title of the checklist will be "Checklist" as a default.
+
+        The <checklist> element can get 2 attributes:     
+
+        data-items: Add these items as the pre-added items. User can change or delete existing ones, or add new items.
+        data-title: Name the checklist what the data-title offers. The title is "SEO Checklist" in this example.
+
+
+        ## Example ##
+
+        <checklist data-items='["Fast site speed","SEO friendly URLs", "Good internal links", "Structured data", "Social media strateg"]'
+        data-title="SEO Checklist">
+        </checklist>
+    -->
+
+    <checklist data-items='["Fast site speed","SEO friendly URLs", "Good internal links", "Structured data", "Social media strategy"]' data-title="SEO Checklist">
+    </checklist>
+
+
+
+    <!-- Blog Content Starts Here-->
+
+    <div class="container">
+        <div class="content">
+            <h1>Interactive Presentation 101: How to Create An Interactive Deck</h1>
+            <h3>When you organize your presentation, you would like it to be attractive. Whether you display them in real-time or embed them on your website, you wish to entertain your audience. The simplest way is to form an interactive presentation. This
+                may keep the audience's attention and even engage them.</h3>
+            <p>November 3, 2022</p>
+            <img class="cover-image" src="https://uploads-ssl.webflow.com/622217140a9cad5092ea9b25/6363c044999316766c6167df_big%20interactive_presentation_cover-min-p-800.webp">
+
+            <p>
+                How you are going to do this is going to depend on the scale of your audience; If you're presenting in a group or seminar, you'll be able to easily move around the room and let everyone discuss with you.
+            </p>
+
+            <p>
+                If you're speaking before a crowd or in an exceedingly large meeting with a bigger audience, it makes more sense to easily introduce your audience to a neighbor or two before entering the discussion.
+            </p>
+
+            <p>
+                You'll ask the audience to answer questions aloud or work along with your neighbors to arrange some questions about your topic or a listing of things they need to find out or create a fun icebreaker game. Search for what kinds of icebreaker questions
+                may make sense for the context of your presentation.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="checklist.js"></script>
+</body>
+
+</html>
